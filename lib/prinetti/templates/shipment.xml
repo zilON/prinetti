@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<eChannel>
+    <ROUTING>
+        <Routing.Target>Kohdej‰rjestelm‰n tunnus</Routing.Target>
+        <Routing.Source>L‰hdej‰rjestelm‰n tunnus</Routing.Source>
+        <Routing.Account>eChannel-tunnus</Routing.Account>
+        <Routing.Key>MD5-tarkiste</Routing.Key>
+        <Routing.Id>Sanoman yksilˆiv‰ id</Routing.Id>
+        <Routing.Name>Sanoman nimi</Routing.Name>
+        <Routing.Time>Sanoman luontiaika YYYY-MM-DD hh:mm:ss</Routing.Time>
+        <Routing.Version>Sanoman versio</Routing.Version>
+        <Routing.Mode>Testi-indikaattori</Routing.Mode>
+        <Routing.Comment>Kommentti</Routing.Comment>
+    </ROUTING>
+    <Shipment>
+        <Shipment.Sender>
+          <Sender.Contractid>L‰hett‰j‰n sopimustunnus</Sender.Contractid>
+          <Sender.Name1>L‰hett‰j‰n nimi</Sender.Name1>
+          <Sender.Name2>L‰hett‰j‰n nimi2</Sender.Name2>
+          <Sender.Addr1>L‰hett‰j‰n katuosoite</Sender.Addr1>
+          <Sender.Addr2>L‰hett‰j‰n postiosoite</Sender.Addr2>
+          <Sender.Addr3>Osoitteen tarkenne</Sender.Addr3>
+          <Sender.Postcode>L‰htˆpostinumero</Sender.Postcode>
+          <Sender.City>L‰hetpaikka</Sender.City>
+          <Sender.Country>L‰hett‰j‰n maakoodi</Sender.Country>
+          <Sender.Phone>L‰hett‰j‰n puhelinnumero</Sender.Phone>
+          <Sender.Vatcode>L‰hett‰j‰n Y-tunnus</Sender.Vatcode>
+        </Shipment.Sender>
+        <Shipment.Recipient>
+          <Recipient.Code>Vastaanottajan koodi l‰hett‰v‰ss‰ j‰rjestelm‰ss‰</Recipient.Code>
+          <Recipient.Name1>Vastaanottajan nimi</Recipient.Name1>
+          <Recipient.Name2>Vastaanottajan nimi2</Recipient.Name2>
+          <Recipient.Addr1>Vastaanottajan katuosoite</Recipient.Addr1>
+          <Recipient.Addr2>Vastaanottajan postiosoite</Recipient.Addr2>
+          <Recipient.Addr3>Osoitteen tarkenne</Recipient.Addr3>
+          <Recipient.Postcode>Kohdepostinumero</Recipient.Postcode>
+          <Recipient.City>Kohdepaikka</Recipient.City>
+          <Recipient.Country>Vastaanottajan maakoodi</Recipient.Country>
+          <Recipient.Phone>Vastaanottajan puhelinnumero</Recipient.Phone>
+          <Recipient.Vatcode>Vastaanottajan Y-tunnus</Recipient.Vatcode>
+          <Recipient.Email>Vastaanottajan s‰hkˆpostiosoite</Recipient.Email>
+        </Shipment.Recipient>
+        <Shipment.Consignment>
+          <Consignment.Reference>Linkkitieto l‰hett‰v‰‰n j‰rjestelm‰‰n (esim. tilausnumero</Consignment.Reference>
+          <Consignment.Product>Palvelu ( Postin tuotekoodi )</Consignment.Product>
+          <Consignment.Contentcode>Sis‰ltˆkoodi KV-l‰hetyksill‰</Consignment.Contentcode>
+          <Consignment.ReturnInstruction>Palautusohjekoodi KV-l‰hetyksill‰</Consignment.ReturnInstruction>
+          <Consignment.Invoicenumber>Liitelaskun numero EU:n ulkopuolelle</Consignment.Invoicenumber>
+          <Consignment.Merchandisevalue>Kauppatavaran arvo</Consignment.Merchandisevalue>
+          <Consignment.AdditionalService>
+             <AdditionalService.ServiceCode>Lis‰palvelukoodi ( Postin koodi )</AdditionalService.ServiceCode>
+             <AdditionalService.Specifier name="tarkenteen nimi">Lis‰palvelun tarkenne</AdditionalService.Specifier>
+          </Consignment.AdditionalService>
+          <Consignment.AdditionalInfo>
+             <AdditionalInfo.Text> Lis‰tietoteksti ( max. 6 rivi‰ ) </AdditionalInfo.Text>
+          </Consignment.AdditionalInfo>
+          <Consignment.Parcel type="normal">
+            <Parcel.Reference>Kollikohtainen linkkitieto l‰hett‰v‰‰n j‰rjestelm‰‰n</Parcel.Reference>
+            <Parcel.Packagetype>Kollilajikoodi ( Postin koodi )</Parcel.Packagetype>
+            <Parcel.Weight unit="kg">Paino kilogrammoina</Parcel.Weight>
+            <Parcel.Volume unit="m3">Tilavuus kuutiometrein‰</Parcel.Volume>
+            <Parcel.Infocode>Kollikohtainen infokoodi</Parcel.Infocode>
+            <Parcel.Contents>Kollikohtainen sis‰ltˆteksti</Parcel.Contents>
+            <Parcel.ParcelService>
+              <ParcelService.Servicecode>Kollikohtainen lis‰palvelukoodi</ParcelService.Servicecode>
+            </Parcel.ParcelService>
+            <Parcel.ReturnService>Palautuskortin tuotekoodi</Parcel.ReturnService>
+          </Consignment.Parcel>
+       </Shipment.Consignment>
+    </Shipment>
+</eChannel>
